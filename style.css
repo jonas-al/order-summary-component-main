@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: var(--font);
+}
+
+:root{
+    --any: #766cf1;
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+
+    --font: 'Red Hat Display', sans-serif;;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    background-color: var(--Paleblue);
+}
+
+main img{
+    width: 100%;
+    height: 50%;
+}
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 95vh;
+}
+
+main .container .content{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+main .container .content .image{
+    width: 100%;
+    height: 31%;
+}
+
+main .container .content .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+main .container .content .ordem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0 40px 0 40px;
+}
+
+main .container .content .ordem h1{
+    font-weight: 900;
+    color: var(--Darkblue);
+    margin-bottom: 20px;
+}
+
+main .container .content .ordem > p{
+    text-align: center;
+    color: var(--Desaturatedblue);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+main .container .content .ordem .subscription{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: var(--Verypaleblue);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+main .container .content .ordem .subscription a{
+    color: var(--Brightblue);
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+main .container .content .ordem .subscription a:hover{
+    cursor: pointer;
+    color: var(--any);
+    text-decoration: none;
+}
+
+main .container .content .ordem .subscription .price{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+main .container .content .ordem .subscription .price img{
+    width: 40px;
+    margin-right: 20px;
+}
+
+main .container .content .ordem .subscription .price .price-info{
+    display: inline-block;
+}
+
+main .container .content .ordem .subscription .price .price-info > h2{
+    font-size: 1em;
+    font-weight: 900;
+    color: var(--Darkblue);
+    margin-bottom: 5px;
+}
+
+main .container .content .ordem .subscription .price .price-info p{
+    color: var(--Desaturatedblue);
+}
+
+main .container .content .ordem .pay{
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Brightblue);
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 20px  hsla(245, 75%, 52%, 0.308);
+}
+
+main .container .content .ordem .pay-cancel{
+    width: 100%;
+    height: 40px;
+    color: var(--Desaturatedblue);
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+main .container .content .ordem .pay:hover{
+    cursor: pointer;
+    background-color: var(--any);
+}
+
+main .container .content .ordem .pay-cancel:hover{
+    cursor: pointer;
+    color: var(--Darkblue)
+}
+
+footer{
+    display: flex;
+    font-family: var(--font1);
+    width: 100%;
+    height: 5vh;
+    font-size: 14px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a{
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 0.5px 0px #eb1491;
+    text-decoration: none;
+}
+
+footer span{
+    font-size: 2.5em;
+    padding: 0 0 10px 15px;
+}
