@@ -27,6 +27,8 @@ main{
 }
 
 main img{
+    display: block;
+    max-width: 100%;
     width: 100%;
     height: 50%;
 }
@@ -48,11 +50,11 @@ main .container .content{
 }
 
 main .container .content .image{
-    width: 100%;
-    height: 31%;
+    max-width: 100%;
+    height: 30%;
 }
 
-main .container .content .image img{
+main .container .content .image > img{
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
